@@ -36,9 +36,31 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+// app.UseEndpoints(endpoints =>
+// {
+//     endpoints.MapGet("/test", async context =>
+//     {
+//         await context.Response.WriteAsync("Hello World!");
+//     });
+//
+//     endpoints.MapControllerRoute(
+//         name: "default",
+//         pattern: "{controller=Home}/{action=Index}/{id?}");
+// });
+
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    // "/first/hello" -> FirstController.Hello()
+    // "/blog/get_all" -> BlogController.getAll()
+    // "/" -> HomeController.Index()
+    // "/first/" -> FirstController.Index()
+    pattern: "{controller=Home}/{action=Index}/{id?}"
+    
+    // Rozetka
+    // pattern: "{lang}/{seo_world}/{id}"
+    );
+
+
 app.MapRazorPages();
 
 app.Run();

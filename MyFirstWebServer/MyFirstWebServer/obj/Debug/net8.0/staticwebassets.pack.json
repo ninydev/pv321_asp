@@ -9,6 +9,18 @@
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
+      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/documents/itstep/JavaScript/index.html",
+      "PackagePath": "staticwebassets/documents/itstep/JavaScript/index.html"
+    },
+    {
+      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/documents/itstep/JavaScript/js.lesson1.html",
+      "PackagePath": "staticwebassets/documents/itstep/JavaScript/js.lesson1.html"
+    },
+    {
+      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/documents/itstep/asp_net_core/asp.net.lesson1.html",
+      "PackagePath": "staticwebassets/documents/itstep/asp_net_core/asp.net.lesson1.html"
+    },
+    {
       "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
     },
