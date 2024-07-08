@@ -1,0 +1,45 @@
+@{ Layout = null; }
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+
+<style>
+    h1 {color: #0a53be;}
+</style>
+<body>
+
+<h1>
+    Build in C#
+    @ViewData["welcomeMessage"]
+    @ViewBag.welcomeMessage
+</h1>
+
+<img src="@ViewData["imgUrl"]"/>
+
+
+<h2> Build by Server Side Rendering (SSR): </h2>
+<ul>
+    <li>ViewData ====>>> @ViewData["welcomeMessage"]</li>
+    <li>ViewBag ====>>> @ViewBag.welcomeMessage</li>
+</ul>
+
+<h2> Build by JS </h2>
+<ul id="ul"></ul>
+
+<footer>
+    &copy; @ViewData["currentDate"]
+</footer>
+
+<script>
+    const ul = document.getElementById("ul")
+    let li1 = document.createElement("li")
+    li1.innerText = "hello form js"
+    ul.appendChild(li1)
+</script>
+
+</body>
+</html>

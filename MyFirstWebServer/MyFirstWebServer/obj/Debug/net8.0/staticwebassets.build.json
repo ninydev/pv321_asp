@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3ZIPUi1etM+NicN+ctxvgUXnqQgOeaT+m9PHBHYdEuM=",
+  "Hash": "lAaAhGLYvoGYVJpNWIsZvF+Jbc1OSYgqx1B73pnqBes=",
   "Source": "MyFirstWebServer",
   "BasePath": "_content/MyFirstWebServer",
   "Mode": "Default",
@@ -1290,6 +1290,25 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
+      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/first/html/index.html",
+      "SourceId": "MyFirstWebServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/",
+      "BasePath": "_content/MyFirstWebServer",
+      "RelativePath": "first/html/index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/first/html/index.html"
+    },
+    {
       "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/js/site.js",
       "SourceId": "MyFirstWebServer",
       "SourceType": "Discovered",
@@ -2392,12 +2411,12 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/LICENSE.txt"
     },
     {
-      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/favicon.ico",
+      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/favicon.ico",
       "SourceId": "MyFirstWebServer",
       "SourceType": "Discovered",
       "ContentRoot": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/",
       "BasePath": "_content/MyFirstWebServer",
-      "RelativePath": "template/assets/favicon.ico",
+      "RelativePath": "template/portfolio/assets/favicon.ico",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2408,15 +2427,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/template/assets/favicon.ico"
+      "OriginalItemSpec": "wwwroot/template/portfolio/assets/favicon.ico"
     },
     {
-      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/about/1.jpg",
+      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/about/1.jpg",
       "SourceId": "MyFirstWebServer",
       "SourceType": "Discovered",
       "ContentRoot": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/",
       "BasePath": "_content/MyFirstWebServer",
-      "RelativePath": "template/assets/img/about/1.jpg",
+      "RelativePath": "template/portfolio/assets/img/about/1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2427,15 +2446,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/template/assets/img/about/1.jpg"
+      "OriginalItemSpec": "wwwroot/template/portfolio/assets/img/about/1.jpg"
     },
     {
-      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/about/2.jpg",
+      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/about/2.jpg",
       "SourceId": "MyFirstWebServer",
       "SourceType": "Discovered",
       "ContentRoot": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/",
       "BasePath": "_content/MyFirstWebServer",
-      "RelativePath": "template/assets/img/about/2.jpg",
+      "RelativePath": "template/portfolio/assets/img/about/2.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2446,15 +2465,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/template/assets/img/about/2.jpg"
+      "OriginalItemSpec": "wwwroot/template/portfolio/assets/img/about/2.jpg"
     },
     {
-      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/about/3.jpg",
+      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/about/3.jpg",
       "SourceId": "MyFirstWebServer",
       "SourceType": "Discovered",
       "ContentRoot": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/",
       "BasePath": "_content/MyFirstWebServer",
-      "RelativePath": "template/assets/img/about/3.jpg",
+      "RelativePath": "template/portfolio/assets/img/about/3.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2465,15 +2484,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/template/assets/img/about/3.jpg"
+      "OriginalItemSpec": "wwwroot/template/portfolio/assets/img/about/3.jpg"
     },
     {
-      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/about/4.jpg",
+      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/about/4.jpg",
       "SourceId": "MyFirstWebServer",
       "SourceType": "Discovered",
       "ContentRoot": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/",
       "BasePath": "_content/MyFirstWebServer",
-      "RelativePath": "template/assets/img/about/4.jpg",
+      "RelativePath": "template/portfolio/assets/img/about/4.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2484,15 +2503,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/template/assets/img/about/4.jpg"
+      "OriginalItemSpec": "wwwroot/template/portfolio/assets/img/about/4.jpg"
     },
     {
-      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/close-icon.svg",
+      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/close-icon.svg",
       "SourceId": "MyFirstWebServer",
       "SourceType": "Discovered",
       "ContentRoot": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/",
       "BasePath": "_content/MyFirstWebServer",
-      "RelativePath": "template/assets/img/close-icon.svg",
+      "RelativePath": "template/portfolio/assets/img/close-icon.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2503,15 +2522,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/template/assets/img/close-icon.svg"
+      "OriginalItemSpec": "wwwroot/template/portfolio/assets/img/close-icon.svg"
     },
     {
-      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/header-bg.jpg",
+      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/header-bg.jpg",
       "SourceId": "MyFirstWebServer",
       "SourceType": "Discovered",
       "ContentRoot": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/",
       "BasePath": "_content/MyFirstWebServer",
-      "RelativePath": "template/assets/img/header-bg.jpg",
+      "RelativePath": "template/portfolio/assets/img/header-bg.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2522,15 +2541,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/template/assets/img/header-bg.jpg"
+      "OriginalItemSpec": "wwwroot/template/portfolio/assets/img/header-bg.jpg"
     },
     {
-      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/logos/facebook.svg",
+      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/logos/facebook.svg",
       "SourceId": "MyFirstWebServer",
       "SourceType": "Discovered",
       "ContentRoot": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/",
       "BasePath": "_content/MyFirstWebServer",
-      "RelativePath": "template/assets/img/logos/facebook.svg",
+      "RelativePath": "template/portfolio/assets/img/logos/facebook.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2541,15 +2560,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/template/assets/img/logos/facebook.svg"
+      "OriginalItemSpec": "wwwroot/template/portfolio/assets/img/logos/facebook.svg"
     },
     {
-      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/logos/google.svg",
+      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/logos/google.svg",
       "SourceId": "MyFirstWebServer",
       "SourceType": "Discovered",
       "ContentRoot": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/",
       "BasePath": "_content/MyFirstWebServer",
-      "RelativePath": "template/assets/img/logos/google.svg",
+      "RelativePath": "template/portfolio/assets/img/logos/google.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2560,15 +2579,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/template/assets/img/logos/google.svg"
+      "OriginalItemSpec": "wwwroot/template/portfolio/assets/img/logos/google.svg"
     },
     {
-      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/logos/ibm.svg",
+      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/logos/ibm.svg",
       "SourceId": "MyFirstWebServer",
       "SourceType": "Discovered",
       "ContentRoot": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/",
       "BasePath": "_content/MyFirstWebServer",
-      "RelativePath": "template/assets/img/logos/ibm.svg",
+      "RelativePath": "template/portfolio/assets/img/logos/ibm.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2579,15 +2598,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/template/assets/img/logos/ibm.svg"
+      "OriginalItemSpec": "wwwroot/template/portfolio/assets/img/logos/ibm.svg"
     },
     {
-      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/logos/microsoft.svg",
+      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/logos/microsoft.svg",
       "SourceId": "MyFirstWebServer",
       "SourceType": "Discovered",
       "ContentRoot": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/",
       "BasePath": "_content/MyFirstWebServer",
-      "RelativePath": "template/assets/img/logos/microsoft.svg",
+      "RelativePath": "template/portfolio/assets/img/logos/microsoft.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2598,15 +2617,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/template/assets/img/logos/microsoft.svg"
+      "OriginalItemSpec": "wwwroot/template/portfolio/assets/img/logos/microsoft.svg"
     },
     {
-      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/map-image.png",
+      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/map-image.png",
       "SourceId": "MyFirstWebServer",
       "SourceType": "Discovered",
       "ContentRoot": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/",
       "BasePath": "_content/MyFirstWebServer",
-      "RelativePath": "template/assets/img/map-image.png",
+      "RelativePath": "template/portfolio/assets/img/map-image.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2617,15 +2636,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/template/assets/img/map-image.png"
+      "OriginalItemSpec": "wwwroot/template/portfolio/assets/img/map-image.png"
     },
     {
-      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/navbar-logo.svg",
+      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/navbar-logo.svg",
       "SourceId": "MyFirstWebServer",
       "SourceType": "Discovered",
       "ContentRoot": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/",
       "BasePath": "_content/MyFirstWebServer",
-      "RelativePath": "template/assets/img/navbar-logo.svg",
+      "RelativePath": "template/portfolio/assets/img/navbar-logo.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2636,15 +2655,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/template/assets/img/navbar-logo.svg"
+      "OriginalItemSpec": "wwwroot/template/portfolio/assets/img/navbar-logo.svg"
     },
     {
-      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/portfolio/1.jpg",
+      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/portfolio/1.jpg",
       "SourceId": "MyFirstWebServer",
       "SourceType": "Discovered",
       "ContentRoot": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/",
       "BasePath": "_content/MyFirstWebServer",
-      "RelativePath": "template/assets/img/portfolio/1.jpg",
+      "RelativePath": "template/portfolio/assets/img/portfolio/1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2655,15 +2674,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/template/assets/img/portfolio/1.jpg"
+      "OriginalItemSpec": "wwwroot/template/portfolio/assets/img/portfolio/1.jpg"
     },
     {
-      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/portfolio/2.jpg",
+      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/portfolio/2.jpg",
       "SourceId": "MyFirstWebServer",
       "SourceType": "Discovered",
       "ContentRoot": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/",
       "BasePath": "_content/MyFirstWebServer",
-      "RelativePath": "template/assets/img/portfolio/2.jpg",
+      "RelativePath": "template/portfolio/assets/img/portfolio/2.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2674,15 +2693,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/template/assets/img/portfolio/2.jpg"
+      "OriginalItemSpec": "wwwroot/template/portfolio/assets/img/portfolio/2.jpg"
     },
     {
-      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/portfolio/3.jpg",
+      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/portfolio/3.jpg",
       "SourceId": "MyFirstWebServer",
       "SourceType": "Discovered",
       "ContentRoot": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/",
       "BasePath": "_content/MyFirstWebServer",
-      "RelativePath": "template/assets/img/portfolio/3.jpg",
+      "RelativePath": "template/portfolio/assets/img/portfolio/3.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2693,15 +2712,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/template/assets/img/portfolio/3.jpg"
+      "OriginalItemSpec": "wwwroot/template/portfolio/assets/img/portfolio/3.jpg"
     },
     {
-      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/portfolio/4.jpg",
+      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/portfolio/4.jpg",
       "SourceId": "MyFirstWebServer",
       "SourceType": "Discovered",
       "ContentRoot": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/",
       "BasePath": "_content/MyFirstWebServer",
-      "RelativePath": "template/assets/img/portfolio/4.jpg",
+      "RelativePath": "template/portfolio/assets/img/portfolio/4.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2712,15 +2731,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/template/assets/img/portfolio/4.jpg"
+      "OriginalItemSpec": "wwwroot/template/portfolio/assets/img/portfolio/4.jpg"
     },
     {
-      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/portfolio/5.jpg",
+      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/portfolio/5.jpg",
       "SourceId": "MyFirstWebServer",
       "SourceType": "Discovered",
       "ContentRoot": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/",
       "BasePath": "_content/MyFirstWebServer",
-      "RelativePath": "template/assets/img/portfolio/5.jpg",
+      "RelativePath": "template/portfolio/assets/img/portfolio/5.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2731,15 +2750,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/template/assets/img/portfolio/5.jpg"
+      "OriginalItemSpec": "wwwroot/template/portfolio/assets/img/portfolio/5.jpg"
     },
     {
-      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/portfolio/6.jpg",
+      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/portfolio/6.jpg",
       "SourceId": "MyFirstWebServer",
       "SourceType": "Discovered",
       "ContentRoot": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/",
       "BasePath": "_content/MyFirstWebServer",
-      "RelativePath": "template/assets/img/portfolio/6.jpg",
+      "RelativePath": "template/portfolio/assets/img/portfolio/6.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2750,15 +2769,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/template/assets/img/portfolio/6.jpg"
+      "OriginalItemSpec": "wwwroot/template/portfolio/assets/img/portfolio/6.jpg"
     },
     {
-      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/team/1.jpg",
+      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/team/1.jpg",
       "SourceId": "MyFirstWebServer",
       "SourceType": "Discovered",
       "ContentRoot": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/",
       "BasePath": "_content/MyFirstWebServer",
-      "RelativePath": "template/assets/img/team/1.jpg",
+      "RelativePath": "template/portfolio/assets/img/team/1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2769,15 +2788,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/template/assets/img/team/1.jpg"
+      "OriginalItemSpec": "wwwroot/template/portfolio/assets/img/team/1.jpg"
     },
     {
-      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/team/2.jpg",
+      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/team/2.jpg",
       "SourceId": "MyFirstWebServer",
       "SourceType": "Discovered",
       "ContentRoot": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/",
       "BasePath": "_content/MyFirstWebServer",
-      "RelativePath": "template/assets/img/team/2.jpg",
+      "RelativePath": "template/portfolio/assets/img/team/2.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2788,15 +2807,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/template/assets/img/team/2.jpg"
+      "OriginalItemSpec": "wwwroot/template/portfolio/assets/img/team/2.jpg"
     },
     {
-      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/team/3.jpg",
+      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/team/3.jpg",
       "SourceId": "MyFirstWebServer",
       "SourceType": "Discovered",
       "ContentRoot": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/",
       "BasePath": "_content/MyFirstWebServer",
-      "RelativePath": "template/assets/img/team/3.jpg",
+      "RelativePath": "template/portfolio/assets/img/team/3.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2807,15 +2826,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/template/assets/img/team/3.jpg"
+      "OriginalItemSpec": "wwwroot/template/portfolio/assets/img/team/3.jpg"
     },
     {
-      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/css/styles.css",
+      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/css/styles.css",
       "SourceId": "MyFirstWebServer",
       "SourceType": "Discovered",
       "ContentRoot": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/",
       "BasePath": "_content/MyFirstWebServer",
-      "RelativePath": "template/css/styles.css",
+      "RelativePath": "template/portfolio/css/styles.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2826,15 +2845,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/template/css/styles.css"
+      "OriginalItemSpec": "wwwroot/template/portfolio/css/styles.css"
     },
     {
-      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/index.html",
+      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/index.html",
       "SourceId": "MyFirstWebServer",
       "SourceType": "Discovered",
       "ContentRoot": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/",
       "BasePath": "_content/MyFirstWebServer",
-      "RelativePath": "template/index.html",
+      "RelativePath": "template/portfolio/index.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2845,15 +2864,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/template/index.html"
+      "OriginalItemSpec": "wwwroot/template/portfolio/index.html"
     },
     {
-      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/js/scripts.js",
+      "Identity": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/js/scripts.js",
       "SourceId": "MyFirstWebServer",
       "SourceType": "Discovered",
       "ContentRoot": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/",
       "BasePath": "_content/MyFirstWebServer",
-      "RelativePath": "template/js/scripts.js",
+      "RelativePath": "template/portfolio/js/scripts.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2864,7 +2883,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/template/js/scripts.js"
+      "OriginalItemSpec": "wwwroot/template/portfolio/js/scripts.js"
     }
   ]
 }

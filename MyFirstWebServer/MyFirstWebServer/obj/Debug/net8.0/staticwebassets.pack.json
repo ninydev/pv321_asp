@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/first/html/index.html",
+      "PackagePath": "staticwebassets/first/html/index.html"
+    },
+    {
       "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },
@@ -257,104 +261,104 @@
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {
-      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/favicon.ico",
-      "PackagePath": "staticwebassets/template/assets/favicon.ico"
+      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/favicon.ico",
+      "PackagePath": "staticwebassets/template/portfolio/assets/favicon.ico"
     },
     {
-      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/about/1.jpg",
-      "PackagePath": "staticwebassets/template/assets/img/about/1.jpg"
+      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/about/1.jpg",
+      "PackagePath": "staticwebassets/template/portfolio/assets/img/about/1.jpg"
     },
     {
-      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/about/2.jpg",
-      "PackagePath": "staticwebassets/template/assets/img/about/2.jpg"
+      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/about/2.jpg",
+      "PackagePath": "staticwebassets/template/portfolio/assets/img/about/2.jpg"
     },
     {
-      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/about/3.jpg",
-      "PackagePath": "staticwebassets/template/assets/img/about/3.jpg"
+      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/about/3.jpg",
+      "PackagePath": "staticwebassets/template/portfolio/assets/img/about/3.jpg"
     },
     {
-      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/about/4.jpg",
-      "PackagePath": "staticwebassets/template/assets/img/about/4.jpg"
+      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/about/4.jpg",
+      "PackagePath": "staticwebassets/template/portfolio/assets/img/about/4.jpg"
     },
     {
-      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/close-icon.svg",
-      "PackagePath": "staticwebassets/template/assets/img/close-icon.svg"
+      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/close-icon.svg",
+      "PackagePath": "staticwebassets/template/portfolio/assets/img/close-icon.svg"
     },
     {
-      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/header-bg.jpg",
-      "PackagePath": "staticwebassets/template/assets/img/header-bg.jpg"
+      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/header-bg.jpg",
+      "PackagePath": "staticwebassets/template/portfolio/assets/img/header-bg.jpg"
     },
     {
-      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/logos/facebook.svg",
-      "PackagePath": "staticwebassets/template/assets/img/logos/facebook.svg"
+      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/logos/facebook.svg",
+      "PackagePath": "staticwebassets/template/portfolio/assets/img/logos/facebook.svg"
     },
     {
-      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/logos/google.svg",
-      "PackagePath": "staticwebassets/template/assets/img/logos/google.svg"
+      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/logos/google.svg",
+      "PackagePath": "staticwebassets/template/portfolio/assets/img/logos/google.svg"
     },
     {
-      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/logos/ibm.svg",
-      "PackagePath": "staticwebassets/template/assets/img/logos/ibm.svg"
+      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/logos/ibm.svg",
+      "PackagePath": "staticwebassets/template/portfolio/assets/img/logos/ibm.svg"
     },
     {
-      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/logos/microsoft.svg",
-      "PackagePath": "staticwebassets/template/assets/img/logos/microsoft.svg"
+      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/logos/microsoft.svg",
+      "PackagePath": "staticwebassets/template/portfolio/assets/img/logos/microsoft.svg"
     },
     {
-      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/map-image.png",
-      "PackagePath": "staticwebassets/template/assets/img/map-image.png"
+      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/map-image.png",
+      "PackagePath": "staticwebassets/template/portfolio/assets/img/map-image.png"
     },
     {
-      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/navbar-logo.svg",
-      "PackagePath": "staticwebassets/template/assets/img/navbar-logo.svg"
+      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/navbar-logo.svg",
+      "PackagePath": "staticwebassets/template/portfolio/assets/img/navbar-logo.svg"
     },
     {
-      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/portfolio/1.jpg",
-      "PackagePath": "staticwebassets/template/assets/img/portfolio/1.jpg"
+      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/portfolio/1.jpg",
+      "PackagePath": "staticwebassets/template/portfolio/assets/img/portfolio/1.jpg"
     },
     {
-      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/portfolio/2.jpg",
-      "PackagePath": "staticwebassets/template/assets/img/portfolio/2.jpg"
+      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/portfolio/2.jpg",
+      "PackagePath": "staticwebassets/template/portfolio/assets/img/portfolio/2.jpg"
     },
     {
-      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/portfolio/3.jpg",
-      "PackagePath": "staticwebassets/template/assets/img/portfolio/3.jpg"
+      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/portfolio/3.jpg",
+      "PackagePath": "staticwebassets/template/portfolio/assets/img/portfolio/3.jpg"
     },
     {
-      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/portfolio/4.jpg",
-      "PackagePath": "staticwebassets/template/assets/img/portfolio/4.jpg"
+      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/portfolio/4.jpg",
+      "PackagePath": "staticwebassets/template/portfolio/assets/img/portfolio/4.jpg"
     },
     {
-      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/portfolio/5.jpg",
-      "PackagePath": "staticwebassets/template/assets/img/portfolio/5.jpg"
+      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/portfolio/5.jpg",
+      "PackagePath": "staticwebassets/template/portfolio/assets/img/portfolio/5.jpg"
     },
     {
-      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/portfolio/6.jpg",
-      "PackagePath": "staticwebassets/template/assets/img/portfolio/6.jpg"
+      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/portfolio/6.jpg",
+      "PackagePath": "staticwebassets/template/portfolio/assets/img/portfolio/6.jpg"
     },
     {
-      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/team/1.jpg",
-      "PackagePath": "staticwebassets/template/assets/img/team/1.jpg"
+      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/team/1.jpg",
+      "PackagePath": "staticwebassets/template/portfolio/assets/img/team/1.jpg"
     },
     {
-      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/team/2.jpg",
-      "PackagePath": "staticwebassets/template/assets/img/team/2.jpg"
+      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/team/2.jpg",
+      "PackagePath": "staticwebassets/template/portfolio/assets/img/team/2.jpg"
     },
     {
-      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/assets/img/team/3.jpg",
-      "PackagePath": "staticwebassets/template/assets/img/team/3.jpg"
+      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/assets/img/team/3.jpg",
+      "PackagePath": "staticwebassets/template/portfolio/assets/img/team/3.jpg"
     },
     {
-      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/css/styles.css",
-      "PackagePath": "staticwebassets/template/css/styles.css"
+      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/css/styles.css",
+      "PackagePath": "staticwebassets/template/portfolio/css/styles.css"
     },
     {
-      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/index.html",
-      "PackagePath": "staticwebassets/template/index.html"
+      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/index.html",
+      "PackagePath": "staticwebassets/template/portfolio/index.html"
     },
     {
-      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/js/scripts.js",
-      "PackagePath": "staticwebassets/template/js/scripts.js"
+      "Id": "/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/wwwroot/template/portfolio/js/scripts.js",
+      "PackagePath": "staticwebassets/template/portfolio/js/scripts.js"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.MyFirstWebServer.Microsoft.AspNetCore.StaticWebAssets.props",
