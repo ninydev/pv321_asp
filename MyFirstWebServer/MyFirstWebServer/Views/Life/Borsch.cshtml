@@ -1,0 +1,30 @@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>@ViewBag.seo.Title</title>
+    <meta name="description" content="@ViewBag.seo.Description"/>
+</head>
+<body>
+<main>
+    
+    <h1> Я готуватимо борщ </h1>
+    <p> <strong>Рецепт: </strong> @ViewData["recipe"] </p>
+    
+    <h2> Моі продукти: </h2>
+    <ul>
+        @foreach (string product in ViewBag.products)
+        {
+            <li> @product </li>
+        }
+    </ul>
+    
+    
+    
+</main>
+</body>
+</html>

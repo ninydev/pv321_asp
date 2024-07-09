@@ -57,7 +57,7 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}"
     
     // Rozetka
-    // pattern: "{lang}/{seo_world}/{id}"
+    // pattern: "{lang}/{seo_world}/p{id}"
     );
 
 
