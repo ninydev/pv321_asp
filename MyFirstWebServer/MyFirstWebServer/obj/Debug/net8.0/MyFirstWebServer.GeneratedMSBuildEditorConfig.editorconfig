@@ -30,6 +30,26 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/Views/AdminPerson/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5QZXJzb24vQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/Views/AdminPerson/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5QZXJzb24vRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/Views/AdminPerson/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5QZXJzb24vRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/Views/AdminPerson/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5QZXJzb24vRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/Views/AdminPerson/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5QZXJzb24vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/Views/Build/First.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQnVpbGQvRmlyc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,6 +64,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/Views/Life/Borsch.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGlmZS9Cb3JzY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/Views/Person/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGVyc29uL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/Views/Person/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGVyc29uL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/Views/Shared/Active/Footer.cshtml]
@@ -62,6 +90,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0FjdGl2ZS9IZWFkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/Views/Shared/Active/Widgets/Subscribe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0FjdGl2ZS9XaWRnZXRzL1N1YnNjcmliZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/Views/Shared/Active/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0FjdGl2ZS9fTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -76,6 +108,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/Views/Subscribe/SaveEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3Vic2NyaWJlL1NhdmVFbWFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/keeper/RiderProjects/pv321_asp/MyFirstWebServer/MyFirstWebServer/Views/Test/Create.cshtml]

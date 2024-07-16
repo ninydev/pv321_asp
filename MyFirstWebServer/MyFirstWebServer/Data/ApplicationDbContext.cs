@@ -8,6 +8,8 @@ public class ApplicationDbContext : IdentityDbContext
 {
     public DbSet<SubscribeModel> Subscribers { get; set; }
     
+    public DbSet<PersonModel> Persons { get; set; }
+    
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)
     {
