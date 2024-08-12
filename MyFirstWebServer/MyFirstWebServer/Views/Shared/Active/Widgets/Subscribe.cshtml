@@ -1,9 +1,15 @@
           <div class="widget">
             <div class="footer-subscribe">
               <h3 class="widget-heading">Subscribe</h3>
+              <div>
+                action="/Subscribe/SaveEmail"
+                method="post"
+              </div>
               <form
+                name="frmSubscribe"
                 asp-controller="Subscribe"
-                asp-action="SaveEmail">
+                asp-action="SaveEmail"
+              >
                 <div class="mb-2">
                   <input type="text" class="form-control" name="email" placeholder="Enter your email">
 
@@ -15,3 +21,34 @@
             </div>
           </div>
           
+          <script>
+  const frm = document.forms.frmSubscribe
+  
+  frm.onsubmit = (ev) => {
+  ev.preventDefault();
+  // const data = new FormData(frm);
+  
+  const data = {
+  email: frm.email.value,
+  __RequestVerificationToken: frm.__RequestVerificationToken.value
+  }
+  
+  console.log(data);
+  
+  fetch('/api/apisubscribe', {
+  method: 'POST', 
+  data: data
+  })
+  .then(res => {
+  console.log(res)
+  })
+  .catch(err => {
+  console.error(err)
+  }
+  )
+  
+  
+    
+  }
+              
+</script>
