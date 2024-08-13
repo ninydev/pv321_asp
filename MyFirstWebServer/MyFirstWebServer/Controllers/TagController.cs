@@ -12,6 +12,8 @@ namespace MyFirstWebServer.Controllers
 {
     public class TagController : Controller
     {
+        
+        
         private readonly ApplicationDbContext _context;
 
         public TagController(ApplicationDbContext context)
@@ -19,12 +21,19 @@ namespace MyFirstWebServer.Controllers
             _context = context;
         }
 
+        
+        
+        
         // GET: Tag
         public async Task<IActionResult> Index()
         {
             return View(await _context.Tags.ToListAsync());
         }
 
+        
+        
+        
+        
         // GET: Tag/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -43,12 +52,21 @@ namespace MyFirstWebServer.Controllers
             return View(tagModel);
         }
 
+        
+        
+        
+        
         // GET: Tag/Create
         public IActionResult Create()
         {
             return View();
         }
 
+        
+        
+        
+        
+        
         // POST: Tag/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -81,6 +99,10 @@ namespace MyFirstWebServer.Controllers
             return View(tagModel);
         }
 
+        
+        
+        
+        
         // POST: Tag/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.

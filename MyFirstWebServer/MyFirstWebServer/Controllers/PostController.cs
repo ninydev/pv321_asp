@@ -12,6 +12,8 @@ namespace MyFirstWebServer.Controllers
 {
     public class PostController : Controller
     {
+        
+        // Все сервисы, которые необходимы для работы контроллера
         private readonly ApplicationDbContext _context;
 
         public PostController(ApplicationDbContext context)
@@ -19,9 +21,17 @@ namespace MyFirstWebServer.Controllers
             _context = context;
         }
 
+        
+        
+        
+        
+        
         // GET: Post
+        // Звертаюся до бази - отримую усі сущности
+        // Передаю List сущностей для будивництва сторинки
         public async Task<IActionResult> Index()
         {
+            
             var applicationDbContext = 
                 _context.Posts
                     .Include(p=> p.Tags)
@@ -31,6 +41,12 @@ namespace MyFirstWebServer.Controllers
             return View(await applicationDbContext.ToListAsync());
         }
 
+        
+        
+        
+        
+        
+        
         // GET: Post/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -51,21 +67,34 @@ namespace MyFirstWebServer.Controllers
             return View(postModel);
         }
 
+        
+        
+        
+        
         // GET: Post/Create
         public IActionResult Create()
         {
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name");
-            ViewData["Tags"] = new MultiSelectList(_context.Tags, "Id", "Name");
+            ViewData["CategoryId"] 
+                = new SelectList(_context.Categories, "Id", "Name");
+            ViewData["Tags"] 
+                = new MultiSelectList(_context.Tags, "Id", "Name");
             return View();
         }
 
+        
+        
+        
+        
+        
         // POST: Post/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> 
-            Create([Bind("Id,Title,Body,Slug,CategoryId")] PostModel postModel, 
+            Create(
+                [Bind("Id,Title,Body,Slug,CategoryId")] 
+                PostModel postModel, 
                 int[] Tags)
         {
             
