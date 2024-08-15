@@ -12,7 +12,7 @@ public class AreaModel
     [ForeignKey("CountryId")]
     public CountryModel? Country { get; set; }
     
-    public List<CityModel> Cities { get; set; }
+    public List<CityModel> Cities { get; set; } =  new List<CityModel>();
     
-    public List<RegionModel> Regions { get; set; }
+    public List<RegionModel> Regions { get; set; } =  new List<RegionModel>();
 }

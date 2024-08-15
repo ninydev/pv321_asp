@@ -8,5 +8,5 @@ public class RegionModel
     
     public string Name { get; set; }
     
-    public List<AreaModel> Areas { get; set; }
+    public List<AreaModel> Areas { get; set; } =  new List<AreaModel>();
 }
