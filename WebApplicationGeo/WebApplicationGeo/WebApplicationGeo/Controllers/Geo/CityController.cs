@@ -22,7 +22,9 @@ namespace WebApplicationGeo.Controllers.Geo
         // GET: City
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Cities.ToListAsync());
+            var data = _context.Cities
+                .Include(c => c.Area);
+            return View(await data.ToListAsync());
         }
 
         // GET: City/Details/5
@@ -46,6 +48,8 @@ namespace WebApplicationGeo.Controllers.Geo
         // GET: City/Create
         public IActionResult Create()
         {
+            ViewData["Areas"] 
+                = new SelectList(_context.Areas, "Id", "Name");
             return View();
         }
 
@@ -54,14 +58,16 @@ namespace WebApplicationGeo.Controllers.Geo
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,AreaId,Area")] CityModel cityModel)
+        public async Task<IActionResult> Create([Bind("Id,Name,AreaId")] CityModel cityModel)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(cityModel);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
+
+                if (ModelState.IsValid)
+                {
+                    _context.Add(cityModel);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+
             return View(cityModel);
         }
 

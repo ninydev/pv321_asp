@@ -22,7 +22,9 @@ namespace WebApplicationGeo.Controllers.Geo
         // GET: Country
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Countries.Include(c => c.Capital);
+            var applicationDbContext 
+                = _context.Countries
+                    .Include(c => c.Capital);
             return View(await applicationDbContext.ToListAsync());
         }
 
@@ -48,7 +50,8 @@ namespace WebApplicationGeo.Controllers.Geo
         // GET: Country/Create
         public IActionResult Create()
         {
-            ViewData["CapitalId"] = new SelectList(_context.Cities, "Id", "Id");
+            ViewData["CapitalId"] 
+                = new SelectList(_context.Cities, "Id", "Name");
             return View();
         }
 
@@ -82,7 +85,7 @@ namespace WebApplicationGeo.Controllers.Geo
             {
                 return NotFound();
             }
-            ViewData["CapitalId"] = new SelectList(_context.Cities, "Id", "Id", countryModel.CapitalId);
+            ViewData["CapitalId"] = new SelectList(_context.Cities, "Id", "Name", countryModel.CapitalId);
             return View(countryModel);
         }
 

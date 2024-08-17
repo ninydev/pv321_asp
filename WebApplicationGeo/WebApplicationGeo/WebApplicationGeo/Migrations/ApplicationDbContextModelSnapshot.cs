@@ -32,6 +32,33 @@ namespace WebApplicationGeo.Migrations
                     b.ToTable("AreaModelRegionModel");
                 });
 
+            modelBuilder.Entity("WebApplicationGeo.Models.Cars.Toyota.ColorModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("RGB")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Url")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Colors");
+                });
+
             modelBuilder.Entity("WebApplicationGeo.Models.Entities.Geo.AreaModel", b =>
                 {
                     b.Property<int>("Id")
@@ -58,13 +85,7 @@ namespace WebApplicationGeo.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Area")
-                        .HasColumnType("INTEGER");
-
                     b.Property<int>("AreaId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int?>("AreaModelId")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Name")
@@ -73,7 +94,7 @@ namespace WebApplicationGeo.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AreaModelId");
+                    b.HasIndex("AreaId");
 
                     b.ToTable("Cities");
                 });
@@ -142,9 +163,13 @@ namespace WebApplicationGeo.Migrations
 
             modelBuilder.Entity("WebApplicationGeo.Models.Entities.Geo.CityModel", b =>
                 {
-                    b.HasOne("WebApplicationGeo.Models.Entities.Geo.AreaModel", null)
+                    b.HasOne("WebApplicationGeo.Models.Entities.Geo.AreaModel", "Area")
                         .WithMany("Cities")
-                        .HasForeignKey("AreaModelId");
+                        .HasForeignKey("AreaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Area");
                 });
 
             modelBuilder.Entity("WebApplicationGeo.Models.Entities.Geo.CountryModel", b =>

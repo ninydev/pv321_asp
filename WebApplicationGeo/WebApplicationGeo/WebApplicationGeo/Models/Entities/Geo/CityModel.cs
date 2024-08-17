@@ -10,5 +10,5 @@ public class CityModel
     
     public int AreaId { get; set; }
     [ForeignKey("AreaId")]
-    public int Area { get; set; }
+    public AreaModel? Area { get; set; }
 }

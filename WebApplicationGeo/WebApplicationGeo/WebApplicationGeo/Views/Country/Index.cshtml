@@ -1,10 +1,10 @@
 @model IEnumerable<WebApplicationGeo.Models.Entities.Geo.CountryModel>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "My Countries";
 }
 
-<h1>Index</h1>
+<h1>All country list</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -28,7 +28,9 @@
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Capital.Id)
+                <a asp-controller="City" asp-action="Details" asp-route-id="@item.Capital.Id">
+                @Html.DisplayFor(modelItem => item.Capital.Name)
+                </a>
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
