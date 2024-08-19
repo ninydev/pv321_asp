@@ -59,6 +59,66 @@ namespace WebApplicationGeo.Migrations
                     b.ToTable("Colors");
                 });
 
+            modelBuilder.Entity("WebApplicationGeo.Models.Cars.Toyota.ConfigurationColorsModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("ColorId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("ConfigurationId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("MainImageUrl")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ColorId");
+
+                    b.HasIndex("ConfigurationId");
+
+                    b.ToTable("ConfigurationColors");
+                });
+
+            modelBuilder.Entity("WebApplicationGeo.Models.Cars.Toyota.ConfigurationModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("ModelId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ModelId");
+
+                    b.ToTable("Configurations");
+                });
+
+            modelBuilder.Entity("WebApplicationGeo.Models.Cars.Toyota.ToyotaModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ToyotaModels");
+                });
+
             modelBuilder.Entity("WebApplicationGeo.Models.Entities.Geo.AreaModel", b =>
                 {
                     b.Property<int>("Id")
@@ -150,6 +210,36 @@ namespace WebApplicationGeo.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("WebApplicationGeo.Models.Cars.Toyota.ConfigurationColorsModel", b =>
+                {
+                    b.HasOne("WebApplicationGeo.Models.Cars.Toyota.ColorModel", "Color")
+                        .WithMany("Configurations")
+                        .HasForeignKey("ColorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WebApplicationGeo.Models.Cars.Toyota.ConfigurationModel", "Configuration")
+                        .WithMany("Colors")
+                        .HasForeignKey("ConfigurationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Color");
+
+                    b.Navigation("Configuration");
+                });
+
+            modelBuilder.Entity("WebApplicationGeo.Models.Cars.Toyota.ConfigurationModel", b =>
+                {
+                    b.HasOne("WebApplicationGeo.Models.Cars.Toyota.ToyotaModel", "Model")
+                        .WithMany("Configurations")
+                        .HasForeignKey("ModelId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Model");
+                });
+
             modelBuilder.Entity("WebApplicationGeo.Models.Entities.Geo.AreaModel", b =>
                 {
                     b.HasOne("WebApplicationGeo.Models.Entities.Geo.CountryModel", "Country")
@@ -179,6 +269,21 @@ namespace WebApplicationGeo.Migrations
                         .HasForeignKey("CapitalId");
 
                     b.Navigation("Capital");
+                });
+
+            modelBuilder.Entity("WebApplicationGeo.Models.Cars.Toyota.ColorModel", b =>
+                {
+                    b.Navigation("Configurations");
+                });
+
+            modelBuilder.Entity("WebApplicationGeo.Models.Cars.Toyota.ConfigurationModel", b =>
+                {
+                    b.Navigation("Colors");
+                });
+
+            modelBuilder.Entity("WebApplicationGeo.Models.Cars.Toyota.ToyotaModel", b =>
+                {
+                    b.Navigation("Configurations");
                 });
 
             modelBuilder.Entity("WebApplicationGeo.Models.Entities.Geo.AreaModel", b =>

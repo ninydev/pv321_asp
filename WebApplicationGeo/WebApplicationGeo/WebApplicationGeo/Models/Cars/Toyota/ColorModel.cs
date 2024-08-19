@@ -15,6 +15,8 @@ public class ColorModel
     
     public string Code { get; set; }
     
+    public List<ConfigurationColorsModel> Configurations { get; set; } = new ();
+    
     // public string Name_en { get; set; }
     // public string Name_de { get; set; }
     
