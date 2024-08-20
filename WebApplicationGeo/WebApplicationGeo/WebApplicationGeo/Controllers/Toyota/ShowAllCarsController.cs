@@ -12,6 +12,17 @@ namespace WebApplicationGeo.Controllers.Toyota
         {
             _context = context;
         }
+
+        public ActionResult Colors()
+        {
+            var colors = _context.Colors
+                    .Include(color=> color.Configurations)
+                    .ThenInclude(config => config.Configuration)
+                    .ThenInclude(config=> config.Model)
+                    .ToList();
+            
+            return View(colors);
+        }
         
         
         // GET: ShowAllCarsController
