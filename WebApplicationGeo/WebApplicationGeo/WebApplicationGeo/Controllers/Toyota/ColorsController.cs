@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using WebApplicationGeo.Data;
+using WebApplicationGeo.Models;
 using WebApplicationGeo.Models.Cars.Toyota;
 
 namespace WebApplicationGeo.Controllers.Toyota
@@ -20,9 +21,69 @@ namespace WebApplicationGeo.Controllers.Toyota
         }
 
         // GET: Colors
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(
+            int pageNumber = 1, int pageSize = 2,
+            string sortColumn = "Name", string sortDirection = "asc"
+            )
         {
-            return View(await _context.Colors.ToListAsync());
+            var query = _context.Colors.AsQueryable();
+
+            // Сортировка
+            query = sortColumn switch
+            {
+                // Якщо сортировка по Id
+                "Id" => sortDirection == "asc" ? query.OrderBy(c => c.Id) : query.OrderByDescending(c => c.Id),
+                // Якщо сортировка по Name
+                "Name" => sortDirection == "asc" ? query.OrderBy(c => c.Name) : query.OrderByDescending(c => c.Name),
+                // За замовченням
+                _ => sortDirection == "asc" ? query.OrderBy(c => c.Name) : query.OrderByDescending(c => c.Name),
+            };
+            
+
+            var totalItems = await query.CountAsync();
+
+            var colors = await query
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
+            ViewData["Paginate"] = new PaginateViewModel
+            {
+                // Для пагинации
+                PageNumber = pageNumber,
+                PageSize = pageSize,
+                TotalItems = totalItems,
+                
+                // Для сортировки
+                SortColumn = sortColumn,
+                SortDirection = sortDirection,
+                Columns = new List<string>(["Id","Name"])
+            };
+
+            return View(colors);
+        }
+        
+        // GET: Colors
+        public async Task<IActionResult> IndexPaginate(
+            int pageNumber = 1, int pageSize = 2
+        )
+        {
+            var totalItems = await _context.Colors.CountAsync();
+            
+            
+            var colors = await _context.Colors
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+            
+            ViewData["Paginate"] = new PaginateViewModel
+            {
+                PageNumber = pageNumber,
+                PageSize = pageSize,
+                TotalItems = totalItems
+            };
+            
+            return View(colors);
         }
 
         // GET: Colors/Details/5

@@ -34,8 +34,20 @@ namespace WebApplicationGeo.Controllers.Geo
             {
                 return NotFound();
             }
+            
+            // SELECT * FROM Cities WHERE Cities.id = $city_id 
+            CityModel currentCity =  await _context.Cities
+                .FirstOrDefaultAsync(m => m.Id == id);
 
+            // SELECT * FROM Areas WHERE Areas.id = $area_id
+            AreaModel cityArea = await 
+                _context.Areas.Where(a => a.Id == currentCity.AreaId).FirstOrDefaultAsync();
+            
+
+            // SELECT * FROM Cities
+            // JOIN Areas ON Area.id = Cities.area_id 
             var cityModel = await _context.Cities
+                .Include(city => city.Area)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (cityModel == null)
             {

@@ -49,6 +49,7 @@ namespace WebApplicationGeo.Controllers.Toyota
         public IActionResult Create()
         {
             ViewData["ModelId"] = new SelectList(_context.ToyotaModels, "Id", "Name");
+            ViewBag.AllModels =  _context.ToyotaModels.ToList();
             return View();
         }
 

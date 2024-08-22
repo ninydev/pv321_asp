@@ -10,7 +10,6 @@ public class ProductModel
     public string Name { get; set; }
     
     public int VendorId { get; set; }
-    
     [ForeignKey("VendorId")]
     public VendorModel Vendor { get; set; }
     

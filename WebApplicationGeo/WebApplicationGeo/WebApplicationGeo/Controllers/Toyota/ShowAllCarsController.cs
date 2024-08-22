@@ -33,6 +33,7 @@ namespace WebApplicationGeo.Controllers.Toyota
                 .Include(tModels => tModels.Configurations)
                     .ThenInclude(tConfig => tConfig.Colors )
                         .ThenInclude(tColors => tColors.Color)
+                        
                 .ToList();
             
             return View(allModels);

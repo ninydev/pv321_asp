@@ -33,9 +33,23 @@ namespace WebApplicationGeo.Controllers.Geo
             {
                 return NotFound();
             }
+            
+            var areaModelLinq = (from area in _context.Areas
+                    where area.Id == id
+                    select new 
+                    {
+                        Area = area,
+                        Country = area.Country,
+                        Cities = area.Cities
+                    })
+                .AsEnumerable() // перевод в перечисляемое, чтобы загрузить данные
+                .Select(x => x.Area) // извлечение Area после выполнения всех операций
+                .FirstOrDefault();
 
+            
             var areaModel = await _context.Areas
                 .Include(a => a.Country)
+                .Include(a=>a.Cities)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (areaModel == null)
             {
