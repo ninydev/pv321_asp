@@ -11,8 +11,8 @@ using WebApplicationGeo.Data;
 namespace WebApplicationGeo.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240815172545_CreateGeoTables")]
-    partial class CreateGeoTables
+    [Migration("20240827165939_ChangeGeo")]
+    partial class ChangeGeo
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -35,6 +35,93 @@ namespace WebApplicationGeo.Migrations
                     b.ToTable("AreaModelRegionModel");
                 });
 
+            modelBuilder.Entity("WebApplicationGeo.Models.Cars.Toyota.ColorModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("RGB")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Url")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Colors");
+                });
+
+            modelBuilder.Entity("WebApplicationGeo.Models.Cars.Toyota.ConfigurationColorsModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("ColorId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("ConfigurationId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("MainImageUrl")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ColorId");
+
+                    b.HasIndex("ConfigurationId");
+
+                    b.ToTable("ConfigurationColors");
+                });
+
+            modelBuilder.Entity("WebApplicationGeo.Models.Cars.Toyota.ConfigurationModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("ModelId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ModelId");
+
+                    b.ToTable("Configurations");
+                });
+
+            modelBuilder.Entity("WebApplicationGeo.Models.Cars.Toyota.ToyotaModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ToyotaModels");
+                });
+
             modelBuilder.Entity("WebApplicationGeo.Models.Entities.Geo.AreaModel", b =>
                 {
                     b.Property<int>("Id")
@@ -47,6 +134,9 @@ namespace WebApplicationGeo.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("TEXT");
+
+                    b.Property<int?>("RegionCapitalId")
+                        .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
 
@@ -61,13 +151,7 @@ namespace WebApplicationGeo.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Area")
-                        .HasColumnType("INTEGER");
-
                     b.Property<int>("AreaId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int?>("AreaModelId")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Name")
@@ -76,7 +160,7 @@ namespace WebApplicationGeo.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AreaModelId");
+                    b.HasIndex("AreaId");
 
                     b.ToTable("Cities");
                 });
@@ -132,6 +216,36 @@ namespace WebApplicationGeo.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("WebApplicationGeo.Models.Cars.Toyota.ConfigurationColorsModel", b =>
+                {
+                    b.HasOne("WebApplicationGeo.Models.Cars.Toyota.ColorModel", "Color")
+                        .WithMany("Configurations")
+                        .HasForeignKey("ColorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WebApplicationGeo.Models.Cars.Toyota.ConfigurationModel", "Configuration")
+                        .WithMany("Colors")
+                        .HasForeignKey("ConfigurationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Color");
+
+                    b.Navigation("Configuration");
+                });
+
+            modelBuilder.Entity("WebApplicationGeo.Models.Cars.Toyota.ConfigurationModel", b =>
+                {
+                    b.HasOne("WebApplicationGeo.Models.Cars.Toyota.ToyotaModel", "Model")
+                        .WithMany("Configurations")
+                        .HasForeignKey("ModelId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Model");
+                });
+
             modelBuilder.Entity("WebApplicationGeo.Models.Entities.Geo.AreaModel", b =>
                 {
                     b.HasOne("WebApplicationGeo.Models.Entities.Geo.CountryModel", "Country")
@@ -145,9 +259,13 @@ namespace WebApplicationGeo.Migrations
 
             modelBuilder.Entity("WebApplicationGeo.Models.Entities.Geo.CityModel", b =>
                 {
-                    b.HasOne("WebApplicationGeo.Models.Entities.Geo.AreaModel", null)
+                    b.HasOne("WebApplicationGeo.Models.Entities.Geo.AreaModel", "Area")
                         .WithMany("Cities")
-                        .HasForeignKey("AreaModelId");
+                        .HasForeignKey("AreaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Area");
                 });
 
             modelBuilder.Entity("WebApplicationGeo.Models.Entities.Geo.CountryModel", b =>
@@ -157,6 +275,21 @@ namespace WebApplicationGeo.Migrations
                         .HasForeignKey("CapitalId");
 
                     b.Navigation("Capital");
+                });
+
+            modelBuilder.Entity("WebApplicationGeo.Models.Cars.Toyota.ColorModel", b =>
+                {
+                    b.Navigation("Configurations");
+                });
+
+            modelBuilder.Entity("WebApplicationGeo.Models.Cars.Toyota.ConfigurationModel", b =>
+                {
+                    b.Navigation("Colors");
+                });
+
+            modelBuilder.Entity("WebApplicationGeo.Models.Cars.Toyota.ToyotaModel", b =>
+                {
+                    b.Navigation("Configurations");
                 });
 
             modelBuilder.Entity("WebApplicationGeo.Models.Entities.Geo.AreaModel", b =>

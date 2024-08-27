@@ -27,6 +27,7 @@
       <Folder Include="Areas\CityController\Models\" />
       <Folder Include="Areas\CityController\Views\" />
       <Folder Include="Controllers\Geo\" />
+      <Folder Include="Migrations\" />
       <Folder Include="wwwroot\storage\colors\" />
       <Folder Include="wwwroot\storage\configuration_colors\" />
     </ItemGroup>

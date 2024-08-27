@@ -8,6 +8,11 @@ public class AreaModel
     
     public string Name { get; set; }
     
+    public int? RegionCapitalId { get; set; }
+    
+    [ForeignKey("RegionCapitalId")]
+    public CityModel? RegionCapital { get; set; }
+    
     public int CountryId { get; set; }
     [ForeignKey("CountryId")]
     public CountryModel? Country { get; set; }

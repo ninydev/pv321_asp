@@ -5,11 +5,27 @@
 namespace WebApplicationGeo.Migrations
 {
     /// <inheritdoc />
-    public partial class CreateGeoTables : Migration
+    public partial class ChangeGeo : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "Colors",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Name = table.Column<string>(type: "TEXT", nullable: false),
+                    Url = table.Column<string>(type: "TEXT", nullable: false),
+                    RGB = table.Column<string>(type: "TEXT", nullable: false),
+                    Code = table.Column<string>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Colors", x => x.Id);
+                });
+
             migrationBuilder.CreateTable(
                 name: "Regions",
                 columns: table => new
@@ -21,6 +37,66 @@ namespace WebApplicationGeo.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Regions", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ToyotaModels",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Name = table.Column<string>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ToyotaModels", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Configurations",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Name = table.Column<string>(type: "TEXT", nullable: false),
+                    ModelId = table.Column<int>(type: "INTEGER", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Configurations", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Configurations_ToyotaModels_ModelId",
+                        column: x => x.ModelId,
+                        principalTable: "ToyotaModels",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ConfigurationColors",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    MainImageUrl = table.Column<string>(type: "TEXT", nullable: false),
+                    ColorId = table.Column<int>(type: "INTEGER", nullable: false),
+                    ConfigurationId = table.Column<int>(type: "INTEGER", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ConfigurationColors", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_ConfigurationColors_Colors_ColorId",
+                        column: x => x.ColorId,
+                        principalTable: "Colors",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_ConfigurationColors_Configurations_ConfigurationId",
+                        column: x => x.ConfigurationId,
+                        principalTable: "Configurations",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -48,6 +124,7 @@ namespace WebApplicationGeo.Migrations
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Name = table.Column<string>(type: "TEXT", nullable: false),
+                    RegionCapitalId = table.Column<int>(type: "INTEGER", nullable: true),
                     CountryId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
@@ -62,18 +139,17 @@ namespace WebApplicationGeo.Migrations
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Name = table.Column<string>(type: "TEXT", nullable: false),
-                    AreaId = table.Column<int>(type: "INTEGER", nullable: false),
-                    Area = table.Column<int>(type: "INTEGER", nullable: false),
-                    AreaModelId = table.Column<int>(type: "INTEGER", nullable: true)
+                    AreaId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Cities", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Cities_Areas_AreaModelId",
-                        column: x => x.AreaModelId,
+                        name: "FK_Cities_Areas_AreaId",
+                        column: x => x.AreaId,
                         principalTable: "Areas",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -106,9 +182,24 @@ namespace WebApplicationGeo.Migrations
                 column: "CountryId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Cities_AreaModelId",
+                name: "IX_Cities_AreaId",
                 table: "Cities",
-                column: "AreaModelId");
+                column: "AreaId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ConfigurationColors_ColorId",
+                table: "ConfigurationColors",
+                column: "ColorId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ConfigurationColors_ConfigurationId",
+                table: "ConfigurationColors",
+                column: "ConfigurationId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Configurations_ModelId",
+                table: "Configurations",
+                column: "ModelId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Countries_CapitalId",
@@ -136,14 +227,26 @@ namespace WebApplicationGeo.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropForeignKey(
-                name: "FK_Cities_Areas_AreaModelId",
+                name: "FK_Cities_Areas_AreaId",
                 table: "Cities");
 
             migrationBuilder.DropTable(
                 name: "AreaModelRegionModel");
 
             migrationBuilder.DropTable(
+                name: "ConfigurationColors");
+
+            migrationBuilder.DropTable(
                 name: "Regions");
+
+            migrationBuilder.DropTable(
+                name: "Colors");
+
+            migrationBuilder.DropTable(
+                name: "Configurations");
+
+            migrationBuilder.DropTable(
+                name: "ToyotaModels");
 
             migrationBuilder.DropTable(
                 name: "Areas");
