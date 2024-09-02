@@ -3,19 +3,13 @@
 <div class="form-inline">
     <div class="form-group">
         <label for="sortColumn">Сортировать по:</label>
-        <select id="sortColumn" class="form-control ml-2" onchange="applySorting()">
-            @foreach (var column in Model.Columns)
-            {
-                <option value="@column">@column</option>
-            }
+        <select id="sortColumn" class="form-control ml-2" onchange="applySorting()" asp-items="Model.SortColumnSelectedList">
         </select>
     </div>
 
     <div class="form-group ml-3">
         <label for="sortDirection">Направление:</label>
-        <select id="sortDirection" class="form-control ml-2" onchange="applySorting()">
-            <option value="asc" >По возрастанию</option>
-            <option value="desc" >По убыванию</option>
+        <select id="sortDirection" class="form-control ml-2" onchange="applySorting()" asp-items="Model.SortDirectionSelectedList">
         </select>
     </div>
 </div>

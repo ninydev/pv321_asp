@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -46,6 +47,35 @@ namespace WebApplicationGeo.Controllers.Toyota
                 .Skip((pageNumber - 1) * pageSize)
                 .Take(pageSize)
                 .ToListAsync();
+            
+            // // также необходимо обновить SelectList для столбцов сортировки
+            // var columns = new List<SelectListItem>
+            // {
+            //     new SelectListItem { Value = "Name", Text = "Name" },
+            //     new SelectListItem { Value = "Id", Text = "Id" },
+            //     // Добавьте другие возможные столбцы
+            // };
+    
+            // Используем рефлексию для получения свойств модели ColorModel
+            var properties = typeof(ColorModel).GetProperties(BindingFlags.Public | BindingFlags.Instance);
+
+            // Создаем список SelectListItem на основе свойств модели
+            var columns = properties.Select(prop => new SelectListItem 
+            { 
+                Value = prop.Name, 
+                Text = prop.Name 
+            }).ToList();
+
+            SelectList sort = new SelectList(columns, "Value", "Text", sortColumn);
+            
+            // Определяем возможные значения для направления сортировки
+            var sortDirections = new List<SelectListItem>
+            {
+                new SelectListItem { Value = "asc", Text = "Ascending" },
+                new SelectListItem { Value = "desc", Text = "Descending" }
+            };
+             SelectList dir = new SelectList(sortDirections, "Value", "Text", sortDirection);
+            
 
             ViewData["Paginate"] = new PaginateViewModel
             {
@@ -56,7 +86,11 @@ namespace WebApplicationGeo.Controllers.Toyota
                 
                 // Для сортировки
                 SortColumn = sortColumn,
+                SortColumnSelectedList = sort,
+                
                 SortDirection = sortDirection,
+                SortDirectionSelectedList = dir,
+                
                 Columns = new List<string>(["Id","Name"])
             };
 
