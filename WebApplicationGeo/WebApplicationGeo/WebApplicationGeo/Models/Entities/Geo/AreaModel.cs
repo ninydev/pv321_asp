@@ -1,3 +1,5 @@
+using Newtonsoft.Json;
+
 namespace WebApplicationGeo.Models.Entities.Geo;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -15,6 +17,7 @@ public class AreaModel
     
     public int CountryId { get; set; }
     [ForeignKey("CountryId")]
+    [JsonIgnore]
     public CountryModel? Country { get; set; }
     
     public List<CityModel> Cities { get; set; } =  new List<CityModel>();

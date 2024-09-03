@@ -62,7 +62,8 @@ namespace WebApplicationGeo.Controllers.Geo
         // GET: Area/Create
         public IActionResult Create()
         {
-            ViewData["CountryId"] = new SelectList(_context.Countries, "Id", "Name");
+            ViewData["CountryId"] = new SelectList(
+                _context.Countries, "Id", "Name");
             return View();
         }
 

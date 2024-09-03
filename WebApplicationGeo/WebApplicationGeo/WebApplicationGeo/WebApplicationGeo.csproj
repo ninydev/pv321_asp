@@ -26,6 +26,10 @@
       <Folder Include="Areas\CityController\Data\" />
       <Folder Include="Areas\CityController\Models\" />
       <Folder Include="Areas\CityController\Views\" />
+      <Folder Include="Areas\GeoPageController\Controllers\" />
+      <Folder Include="Areas\GeoPageController\Data\" />
+      <Folder Include="Areas\GeoPageController\Models\" />
+      <Folder Include="Areas\GeoPageController\Views\" />
       <Folder Include="Migrations\" />
       <Folder Include="wwwroot\storage\colors\" />
       <Folder Include="wwwroot\storage\configuration_colors\" />
