@@ -30,6 +30,7 @@
       <Folder Include="Areas\GeoPageController\Data\" />
       <Folder Include="Areas\GeoPageController\Models\" />
       <Folder Include="Areas\GeoPageController\Views\" />
+      <Folder Include="Controllers\Api\" />
       <Folder Include="Migrations\" />
       <Folder Include="wwwroot\storage\colors\" />
       <Folder Include="wwwroot\storage\configuration_colors\" />

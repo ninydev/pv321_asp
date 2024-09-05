@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace WebApplicationGeo.Models;
+namespace WebApplicationGeo.Models.ViewModels;
 
 public class PaginateViewModel
 {

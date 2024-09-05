@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using WebApplicationGeo.Data;
-using WebApplicationGeo.Models;
+using WebApplicationGeo.Models.ViewModels;
 using WebApplicationGeo.Models.Cars.Toyota;
 
 namespace WebApplicationGeo.Controllers.Toyota
