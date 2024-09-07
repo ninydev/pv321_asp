@@ -51,7 +51,6 @@ namespace WebApplicationGeo.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Url")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
@@ -138,6 +137,8 @@ namespace WebApplicationGeo.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CountryId");
+
+                    b.HasIndex("RegionCapitalId");
 
                     b.ToTable("Areas");
                 });
@@ -251,7 +252,13 @@ namespace WebApplicationGeo.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("WebApplicationGeo.Models.Entities.Geo.CityModel", "RegionCapital")
+                        .WithMany()
+                        .HasForeignKey("RegionCapitalId");
+
                     b.Navigation("Country");
+
+                    b.Navigation("RegionCapital");
                 });
 
             modelBuilder.Entity("WebApplicationGeo.Models.Entities.Geo.CityModel", b =>
@@ -259,7 +266,7 @@ namespace WebApplicationGeo.Migrations
                     b.HasOne("WebApplicationGeo.Models.Entities.Geo.AreaModel", "Area")
                         .WithMany("Cities")
                         .HasForeignKey("AreaId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Area");

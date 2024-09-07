@@ -1,4 +1,5 @@
-﻿@{
+﻿@model WebApplicationGeo.Models.Cars.Toyota.ColorModel
+@{
     ViewData["Title"] = "Color Page";
 }
 
@@ -10,7 +11,70 @@
             </tbody>
         </table>
     </div>
+
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form action="/api/ApiColor" method="post" 
+                  enctype="multipart/form-data" name="frmCreateColor">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="RGB" class="control-label"></label>
+                    <input asp-for="RGB" class="form-control" type="color"/>
+                    <span asp-validation-for="RGB" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="file" name="file" accept="image/png, image/jpeg"/>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Code" class="control-label"></label>
+                    <input asp-for="Code" class="form-control" />
+                    <span asp-validation-for="Code" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
+
+<script>
+    const frmCreateColor = document.forms.frmCreateColor;
+    
+    frmCreateColor.onsubmit = (ev) => {
+        ev.preventDefault();
+        
+        const frmData = new FormData(frmCreateColor)
+        
+        fetch('/api/ApiColor/', {
+            method: 'POST',
+            body: frmData 
+        })
+        .then( res => {
+            console.log (res.status)
+            console.log (res.statusText)
+            return res.json()
+        })
+        .then( result => {
+            console.log(result)
+        })
+        .catch(err => {
+            console.error (err)
+        })
+        
+        return false;
+    } 
+    
+</script>
+
+
+
 
 <script>
     
@@ -38,6 +102,26 @@
             
             let tdCode = document.createElement('td');
             tdCode.innerText = item.code;
+
+            let tdOperation = document.createElement('td');
+            let spanDel = document.createElement('span')
+            spanDel.innerHTML = ' - '
+            spanDel.id = item.id
+            spanDel.onclick = (ev) => {
+                fetch('/api/ApiColor/' + ev.target.id , {
+                method: 'DELETE'
+                })
+                .then(res => {
+                console.log(res.status)
+                })
+                .catch(err => {
+                console.error(err)
+                })
+            }
+            
+            tdOperation.appendChild(spanDel)
+            tr.appendChild(tdOperation)
+            
             tr.appendChild(tdCode)
             
             tBody.appendChild(tr)

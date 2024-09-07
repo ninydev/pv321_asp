@@ -114,7 +114,7 @@ namespace WebApplicationGeo.Controllers.Api
                 return NotFound();
             }
 
-            return colorModel;
+            return Ok(colorModel);
         }
 
         // PUT: api/ApiColor/5
@@ -148,16 +148,47 @@ namespace WebApplicationGeo.Controllers.Api
             return NoContent();
         }
 
+        
+        
+        
+        
+        
         // POST: api/ApiColor
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<ColorModel>> PostColorModel(ColorModel colorModel)
+        public async Task<ActionResult<ColorModel>> PostColorModel(
+            [FromForm] ColorModel colorModel, 
+            [FromForm] IFormFile file
+            )
         {
+            
+            string baseUrl = "/storage/colors";
+        
+            // Проверяем, загружен ли файл
+            if (file != null && file.Length > 0)
+            {
+                // Указываем путь для сохранения файла
+                var filePath = Path.Combine(Directory.GetCurrentDirectory()
+                    , "wwwroot" + baseUrl, file.FileName);
+
+                // Сохраняем файл на сервере
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await file.CopyToAsync(stream);
+                }
+            
+                colorModel.Url = baseUrl + "/" + file.FileName;
+            }
+            
             _context.Colors.Add(colorModel);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetColorModel", new { id = colorModel.Id }, colorModel);
+            return CreatedAtAction("GetColorModel",
+                new { id = colorModel.Id }, colorModel);
         }
+        
+        
+        
 
         // DELETE: api/ApiColor/5
         [HttpDelete("{id}")]
