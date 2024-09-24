@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebApplicationGeo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a5c255fa1c5eb4407cccb3981db3bf018ac996b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f7cfbc50c729072244a3f77cbd341ff6ce97673")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebApplicationGeo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebApplicationGeo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

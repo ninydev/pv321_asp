@@ -28,7 +28,7 @@ namespace WebApplicationGeo.Controllers.Api
         [HttpGet]
         public async Task<ActionResult<ApiPaginateResponse<ColorModel>>> 
             GetColors(
-                int pageNumber = 1, int pageSize = 2,
+                int pageNumber = 1, int pageSize = 20,
                 string sortColumn = "Name", string sortDirection = "asc"   
                 )
         {
